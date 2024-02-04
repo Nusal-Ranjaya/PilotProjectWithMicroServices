@@ -1,0 +1,14 @@
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\bin\Debug\net8.0\CustomerDataLayer.deps.json
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\bin\Debug\net8.0\CustomerDataLayer.runtimeconfig.json
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\bin\Debug\net8.0\CustomerDataLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\bin\Debug\net8.0\CustomerDataLayer.pdb
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.csproj.AssemblyReference.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.AssemblyInfoInputs.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.AssemblyInfo.cs
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.csproj.CoreCompileInputs.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\refint\CustomerDataLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.pdb
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.genruntimeconfig.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\ref\CustomerDataLayer.dll

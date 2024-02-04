@@ -1,0 +1,14 @@
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\bin\Debug\net8.0\CartDataAccessLayer.deps.json
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\bin\Debug\net8.0\CartDataAccessLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\bin\Debug\net8.0\CartDataAccessLayer.pdb
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.AssemblyInfoInputs.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.AssemblyInfo.cs
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\refint\CartDataAccessLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.pdb
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\ref\CartDataAccessLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\bin\Debug\net8.0\CartDataAccessLayer.runtimeconfig.json
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.csproj.AssemblyReference.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.genruntimeconfig.cache
