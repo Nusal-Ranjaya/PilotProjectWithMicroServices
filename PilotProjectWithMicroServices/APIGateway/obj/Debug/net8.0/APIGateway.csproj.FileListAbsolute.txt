@@ -36,3 +36,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\APIGateway
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\APIGateway\obj\Debug\net8.0\APIGateway.MvcApplicationPartsAssemblyInfo.cs
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\APIGateway\obj\Debug\net8.0\APIGateway.csproj.CopyComplete
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\APIGateway\bin\Debug\net8.0\MicroservicesRouting.json
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\APIGateway\obj\Debug\net8.0\APIGateway.sourcelink.json
