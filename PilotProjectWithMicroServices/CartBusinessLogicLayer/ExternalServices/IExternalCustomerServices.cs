@@ -8,6 +8,6 @@ namespace CartBusinessLogicLayer.ExternalServices
 {
     public interface IExternalCustomerServices
     {
-        Task<bool> CustomerExistsAsync(int? id);
+        Task<bool> CustomerExistsAsync(Guid? id);
     }
 }

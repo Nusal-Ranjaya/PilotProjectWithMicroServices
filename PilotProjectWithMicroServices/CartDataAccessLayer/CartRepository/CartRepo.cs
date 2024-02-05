@@ -18,8 +18,16 @@ namespace CartDataAccessLayer.CartRepository
         {
             _context = new CartAppDbCon();
         }
-        public async void CreateCartAsync(Cart cart)
+        public async void CreateCartAsync(PostCart postCart)
         {
+            var cart = new Cart()
+            {
+                Id = Guid.NewGuid(),
+                CusId = postCart.CusId,
+                Product = postCart.Product,
+                DeliveryAddress = postCart.DeliveryAddress,
+
+            };
             _context.carts.Add(cart);
             await _context.SaveChangesAsync();
         }
@@ -30,12 +38,12 @@ namespace CartDataAccessLayer.CartRepository
             return carts;
         }
 
-        public async Task<Cart> GetCartAsync(int id)
+        public async Task<Cart> GetCartAsync(Guid id)
         {
             return await _context.carts.FirstOrDefaultAsync(m=>m.Id==id);
         }
 
-        public async void RemoveCartAsync(int id)
+        public async void RemoveCartAsync(Guid id)
         {
             var cartToRemove = _context.carts.FirstOrDefault(c => c.Id == id);
             if (cartToRemove != null)

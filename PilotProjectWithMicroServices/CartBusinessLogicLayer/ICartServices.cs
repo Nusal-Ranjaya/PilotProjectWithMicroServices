@@ -11,9 +11,9 @@ namespace CartBusinessLogicLayer
     {
         Task<IEnumerable<Cart>> GetAllCartsAsync();
 
-        Task<Cart> GetCartAsync(int id);
+        Task<Cart> GetCartAsync(Guid id);
 
-        Task<bool> CreateCartAsync(Cart cart);
-        void RemoveCartAsync(int id);
+        Task<bool> CreateCartAsync(PostCart cart);
+        void RemoveCartAsync(Guid id);
     }
 }

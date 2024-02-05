@@ -18,12 +18,12 @@ namespace CartBusinessLogicLayer
             _repo = repo;
             _externalCustomerServices = externalCustomerServices;
         }
-        public async Task<bool> CreateCartAsync(Cart cart)
+        public async Task<bool> CreateCartAsync(PostCart postCart)
         {
-            var check = await _externalCustomerServices.CustomerExistsAsync(cart.CusId);
+            var check = await _externalCustomerServices.CustomerExistsAsync(postCart.CusId);
             if (check)
             {
-                _repo.CreateCartAsync(cart);
+                _repo.CreateCartAsync(postCart);
                 return true;
             }
             else
@@ -38,12 +38,12 @@ namespace CartBusinessLogicLayer
             return await _repo.GetAllCartsAsync();
         }
 
-        public Task<Cart> GetCartAsync(int id)
+        public Task<Cart> GetCartAsync(Guid id)
         {
             return _repo.GetCartAsync(id);
         }
 
-        public void RemoveCartAsync(int id)
+        public void RemoveCartAsync(Guid id)
         {
             _repo.RemoveCartAsync(id);
         }

@@ -32,7 +32,7 @@ namespace CartAPIEndPoint.Controllers
 
         // GET: api/Carts/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Cart>> GetCart(int id)
+        public async Task<ActionResult<Cart>> GetCart(Guid id)
         {
             var cart = await _services.GetCartAsync(id);
 
@@ -47,13 +47,13 @@ namespace CartAPIEndPoint.Controllers
         // POST: api/Carts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Cart>> PostCart(Cart cart)
+        public async Task<ActionResult<Cart>> PostCart(PostCart postCart)
         {
-           var check = await _services.CreateCartAsync(cart);
+           var check = await _services.CreateCartAsync(postCart);
 
             if (check) 
             {
-                return CreatedAtAction("GetCart", new { id = cart.Id }, cart);
+                return CreatedAtAction("GetCart", new { id = postCart.CusId }, postCart);
             }
 
             return NotFound();
@@ -61,7 +61,7 @@ namespace CartAPIEndPoint.Controllers
 
         // DELETE: api/Carts/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCart(int id)
+        public async Task<IActionResult> DeleteCart(Guid id)
         {
             var cart = await _services.GetCartAsync(id);
             if (cart == null)

@@ -12,3 +12,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAc
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\bin\Debug\net8.0\CartDataAccessLayer.runtimeconfig.json
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.csproj.AssemblyReference.cache
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.genruntimeconfig.cache
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartDataAccessLayer\obj\Debug\net8.0\CartDataAccessLayer.sourcelink.json

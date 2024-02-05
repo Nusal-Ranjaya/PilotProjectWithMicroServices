@@ -13,3 +13,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartBusine
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartBusinessLogicLayer\bin\Debug\net8.0\CartDataAccessLayer.pdb
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartBusinessLogicLayer\obj\Debug\net8.0\CartBusinessLogicLayer.csproj.AssemblyReference.cache
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartBusinessLogicLayer\obj\Debug\net8.0\CartBusinessLogicLayer.csproj.CopyComplete
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CartBusinessLogicLayer\obj\Debug\net8.0\CartBusinessLogicLayer.sourcelink.json

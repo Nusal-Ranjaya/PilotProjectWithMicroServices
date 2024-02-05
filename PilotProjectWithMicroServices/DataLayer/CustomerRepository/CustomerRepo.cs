@@ -27,7 +27,7 @@ namespace CustomerDataLayer.CustomerRepository
             await _context.SaveChangesAsync();  
         }
 
-        public async void DeleteCustomerAsync(int id)
+        public async void DeleteCustomerAsync(Guid id)
         {
             var customerToRemove = _context.internalCustomers.FirstOrDefault(c => c.Id == id);
             if (customerToRemove != null)
@@ -48,19 +48,19 @@ namespace CustomerDataLayer.CustomerRepository
             return _mapper.Map<IEnumerable<ReqResCustomer>>(internalCustomers);
         }
 
-        public async Task<InternalCustomer> GetInternalCustomerAsync(int id)
+        public async Task<InternalCustomer> GetInternalCustomerAsync(Guid id)
         {
             return await _context.internalCustomers.FirstOrDefaultAsync(m => m.Id == id);
             
         }
 
-        public async Task<ReqResCustomer> GetReqResCustomerAsync(int id)
+        public async Task<ReqResCustomer> GetReqResCustomerAsync(Guid id)
         {
             var internalCustomer = await _context.internalCustomers.FirstOrDefaultAsync(m => m.Id == id);
             return _mapper.Map<ReqResCustomer>(internalCustomer);
         }
 
-        public bool InternalCustomerExistsAsync(int id)
+        public bool InternalCustomerExistsAsync(Guid id)
         {
             return _context.internalCustomers.Any(m => m.Id == id);
         }
@@ -73,6 +73,7 @@ namespace CustomerDataLayer.CustomerRepository
                 // Update the properties of existingCustomer with data properties
                 existingCustomer.Name = customer.Name;
                 existingCustomer.Email = customer.Email;
+                existingCustomer.Password= customer.Password;
                 existingCustomer.Address = customer.Address;
 
                 await _context.SaveChangesAsync();

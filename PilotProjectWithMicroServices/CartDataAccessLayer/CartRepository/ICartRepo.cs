@@ -12,10 +12,10 @@ namespace CartDataAccessLayer.CartRepository
     {
         Task<IEnumerable<Cart>> GetAllCartsAsync();
         
-        Task<Cart> GetCartAsync(int id);
+        Task<Cart> GetCartAsync(Guid id);
       
-        void CreateCartAsync(Cart cart);
+        void CreateCartAsync(PostCart postCart);
 
-        void RemoveCartAsync(int id);
+        void RemoveCartAsync(Guid id);
     }
 }

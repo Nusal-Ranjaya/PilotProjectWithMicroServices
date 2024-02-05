@@ -244,3 +244,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CustomerAP
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CustomerAPIEndPoint\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CustomerAPIEndPoint\bin\Debug\net8.0\CustomerBusinessLogicLayer.dll
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CustomerAPIEndPoint\bin\Debug\net8.0\CustomerBusinessLogicLayer.pdb
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\CustomerAPIEndPoint\obj\Debug\net8.0\CustomerAPIEndPoint.sourcelink.json

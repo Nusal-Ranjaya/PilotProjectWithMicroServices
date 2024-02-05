@@ -11,11 +11,11 @@ namespace CustomerDataLayer.CustomerRepository
     {
         Task<IEnumerable<InternalCustomer>> GetAllInternalCustomersAsync();
         Task<IEnumerable<ReqResCustomer>> GetAllReqResCustomerAsync();
-        Task<ReqResCustomer> GetReqResCustomerAsync(int id);
-        Task<InternalCustomer> GetInternalCustomerAsync(int id);
+        Task<ReqResCustomer> GetReqResCustomerAsync(Guid id);
+        Task<InternalCustomer> GetInternalCustomerAsync(Guid id);
         void UpdateCustomerAsync(InternalCustomer customer);
-        void DeleteCustomerAsync(int id);   
+        void DeleteCustomerAsync(Guid id);   
         void CreateCustomerAsync(InternalCustomer customer);
-        bool InternalCustomerExistsAsync(int id);
+        bool InternalCustomerExistsAsync(Guid id);
     }
 }

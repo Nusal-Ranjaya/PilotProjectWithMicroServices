@@ -13,3 +13,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\BusinessLo
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\BusinessLogicLayer\obj\Debug\net8.0\refint\CustomerBusinessLogicLayer.dll
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\BusinessLogicLayer\obj\Debug\net8.0\CustomerBusinessLogicLayer.pdb
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\BusinessLogicLayer\obj\Debug\net8.0\ref\CustomerBusinessLogicLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\BusinessLogicLayer\obj\Debug\net8.0\CustomerBusinessLogicLayer.sourcelink.json

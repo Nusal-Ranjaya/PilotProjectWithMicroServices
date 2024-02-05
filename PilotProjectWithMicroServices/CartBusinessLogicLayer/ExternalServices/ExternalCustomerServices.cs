@@ -14,7 +14,7 @@ namespace CartBusinessLogicLayer.ExternalServices
         {
             _httpClientFactory = httpClientFactory;
         }
-        public async Task<bool> CustomerExistsAsync(int? id)
+        public async Task<bool> CustomerExistsAsync(Guid? id)
         {
             using var client = _httpClientFactory.CreateClient("customer");
             var response = await client.GetAsync($"customers/{id}");

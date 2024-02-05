@@ -12,3 +12,4 @@ D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.pdb
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.genruntimeconfig.cache
 D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\ref\CustomerDataLayer.dll
+D:\DotNet\PilotProjectWithMicroServices\PilotProjectWithMicroServices\DataLayer\obj\Debug\net8.0\CustomerDataLayer.sourcelink.json

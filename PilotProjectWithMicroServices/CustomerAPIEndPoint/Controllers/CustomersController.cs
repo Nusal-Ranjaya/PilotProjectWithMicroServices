@@ -32,7 +32,7 @@ namespace CustomerAPIEndPoint.Controllers
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ReqResCustomer>> GetInternalCustomer(int id)
+        public async Task<ActionResult<ReqResCustomer>> GetInternalCustomer(Guid id)
         {
             var internalCustomer = await _service.GetReqResCustomerAsync(id);
 
@@ -47,14 +47,15 @@ namespace CustomerAPIEndPoint.Controllers
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutInternalCustomer(int id, InternalCustomer internalCustomer)
+        public async Task<IActionResult> PutInternalCustomer(Guid id, PostCustomer postCustomer)
         {
-            if (id != internalCustomer.Id)
+            var internalCustomer = _service.GetInternalCustomerAsync(id);
+            if (internalCustomer == null)
             {
                 return BadRequest();
             }
 
-            _service.UpdateCustomerAsync(internalCustomer);
+            _service.UpdateCustomerAsync(id,postCustomer);
 
             return NoContent();
         }
@@ -62,17 +63,17 @@ namespace CustomerAPIEndPoint.Controllers
         // POST: api/Customers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<InternalCustomer>> PostInternalCustomer(InternalCustomer internalCustomer)
+        public void PostInternalCustomer(PostCustomer PostCustomer)
         {
-            _service.CreateCustomerAsync(internalCustomer);
+            _service.CreateCustomerAsync(PostCustomer);
             
 
-            return CreatedAtAction("GetInternalCustomer", new { id = internalCustomer.Id }, internalCustomer);
+           // return CreatedAtAction("GetInternalCustomer", new { id = PlCustomer.Id }, internalCustomer);
         }
 
         // DELETE: api/Customers/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteInternalCustomer(int id)
+        public async Task<IActionResult> DeleteInternalCustomer(Guid id)
         {
             var internalCustomer = await _service.GetInternalCustomerAsync(id);
             if (internalCustomer == null)

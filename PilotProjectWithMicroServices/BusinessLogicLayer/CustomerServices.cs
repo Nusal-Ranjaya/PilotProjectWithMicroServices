@@ -15,12 +15,20 @@ namespace CustomerBusinessLogicLayer
         {
             _customerRepo = customerRepo;
         }
-        public void CreateCustomerAsync(InternalCustomer customer)
+        public void CreateCustomerAsync(PostCustomer postCustomer)
         {
+            var customer = new InternalCustomer()
+            {
+                Id = Guid.NewGuid(),
+                Name = postCustomer.Name,
+                Password = postCustomer.Password,
+                Email = postCustomer.Email,
+                Address = postCustomer.Address
+            };
             _customerRepo.CreateCustomerAsync(customer);
         }
 
-        public void DeleteCustomerAsync(int id)
+        public void DeleteCustomerAsync(Guid id)
         {
             _customerRepo.DeleteCustomerAsync(id);
         }
@@ -35,18 +43,26 @@ namespace CustomerBusinessLogicLayer
             return await _customerRepo.GetAllReqResCustomerAsync();
         }
 
-        public async Task<InternalCustomer> GetInternalCustomerAsync(int id)
+        public async Task<InternalCustomer> GetInternalCustomerAsync(Guid id)
         {
             return await _customerRepo.GetInternalCustomerAsync(id);
         }
 
-        public async Task<ReqResCustomer> GetReqResCustomerAsync(int id)
+        public async Task<ReqResCustomer> GetReqResCustomerAsync(Guid id)
         {
             return await _customerRepo.GetReqResCustomerAsync(id);
         }
 
-        public void UpdateCustomerAsync(InternalCustomer customer)
+        public void UpdateCustomerAsync(Guid id,PostCustomer postCustomer)
         {
+            var customer = new InternalCustomer()
+            {
+                Id = id,
+                Name = postCustomer.Name,
+                Password = postCustomer.Password,
+                Email = postCustomer.Email,
+                Address = postCustomer.Address
+            };
             _customerRepo.UpdateCustomerAsync(customer);
         }
     }

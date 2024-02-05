@@ -8,9 +8,9 @@ namespace CartDataAccessLayer.Entity
 {
     public class Cart
     {
-        public int Id { get; set; }
-        public int? CusId { get; set; }
-        public string? product { get; set; }
+        public Guid Id { get; set; }
+        public Guid? CusId { get; set; }
+        public string? Product { get; set; }
         public string? DeliveryAddress { get; set;}
         
     }

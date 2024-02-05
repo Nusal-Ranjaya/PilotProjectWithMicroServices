@@ -24,19 +24,17 @@ namespace CartDataAccessLayer.Migrations
 
             modelBuilder.Entity("CartDataAccessLayer.Entity.Cart", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("CusId")
-                        .HasColumnType("integer");
+                    b.Property<Guid?>("CusId")
+                        .HasColumnType("uuid");
 
                     b.Property<string>("DeliveryAddress")
                         .HasColumnType("text");
 
-                    b.Property<string>("product")
+                    b.Property<string>("Product")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
