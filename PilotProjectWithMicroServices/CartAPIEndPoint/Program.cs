@@ -1,10 +1,14 @@
 using CartBusinessLogicLayer;
 using CartBusinessLogicLayer.ExternalServices;
+using CartDataAccessLayer.CartAppDbContext;
 using CartDataAccessLayer.CartRepository;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<CartAppDbCon>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient("customer", config => config.BaseAddress = new System.Uri("https://localhost:7002"));

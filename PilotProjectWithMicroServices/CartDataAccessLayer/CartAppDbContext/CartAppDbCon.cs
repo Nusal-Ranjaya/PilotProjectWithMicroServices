@@ -10,10 +10,7 @@ namespace CartDataAccessLayer.CartAppDbContext
 {
     public class CartAppDbCon :DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5432;Database=PilotProjectMicroServicesCartDb;Username=postgres;Password=root;");
-        }
+        public CartAppDbCon(DbContextOptions<CartAppDbCon> options) : base(options) { }
         public DbSet<Cart> carts { get; set; }
     }
 }

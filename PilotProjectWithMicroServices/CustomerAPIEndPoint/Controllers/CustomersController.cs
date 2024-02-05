@@ -66,9 +66,8 @@ namespace CustomerAPIEndPoint.Controllers
         public void PostInternalCustomer(PostCustomer PostCustomer)
         {
             _service.CreateCustomerAsync(PostCustomer);
-            
 
-           // return CreatedAtAction("GetInternalCustomer", new { id = PlCustomer.Id }, internalCustomer);
+           //return CreatedAtAction("GetInternalCustomer", new { id = PlCustomer.Id }, internalCustomer);
         }
 
         // DELETE: api/Customers/5

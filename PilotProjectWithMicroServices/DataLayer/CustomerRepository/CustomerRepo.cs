@@ -15,19 +15,20 @@ namespace CustomerDataLayer.CustomerRepository
         private readonly CustomerAppDbCon _context;
         private readonly ICustomerMapper _cusMapper;
         private readonly AutoMapper.IMapper _mapper;
-        public CustomerRepo(ICustomerMapper cusMapper)
+        public CustomerRepo(ICustomerMapper cusMapper, CustomerAppDbCon context)
         {
-            _context = new CustomerAppDbCon();
+           // _context = new CustomerAppDbCon();
+           _context=context;
             _cusMapper  = cusMapper;
             _mapper = _cusMapper.InitializeMapper();
         }
-        public async void CreateCustomerAsync(InternalCustomer customer)
+        public async Task CreateCustomerAsync(InternalCustomer customer)
         {
-            _context.internalCustomers.Add(customer);
+            await _context.internalCustomers.AddAsync(customer);
             await _context.SaveChangesAsync();  
         }
 
-        public async void DeleteCustomerAsync(Guid id)
+        public async Task DeleteCustomerAsync(Guid id)
         {
             var customerToRemove = _context.internalCustomers.FirstOrDefault(c => c.Id == id);
             if (customerToRemove != null)
@@ -65,7 +66,7 @@ namespace CustomerDataLayer.CustomerRepository
             return _context.internalCustomers.Any(m => m.Id == id);
         }
 
-        public async void UpdateCustomerAsync(InternalCustomer customer)
+        public async Task UpdateCustomerAsync(InternalCustomer customer)
         {
             var existingCustomer = await _context.internalCustomers.FirstOrDefaultAsync(c => c.Id == customer.Id);
             if (existingCustomer != null)

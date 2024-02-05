@@ -14,11 +14,11 @@ namespace CartDataAccessLayer.CartRepository
     {
         private readonly CartAppDbCon _context;
 
-        public CartRepo() 
+        public CartRepo(CartAppDbCon context) 
         {
-            _context = new CartAppDbCon();
+            _context = context ;
         }
-        public async void CreateCartAsync(PostCart postCart)
+        public async Task CreateCartAsync(PostCart postCart)
         {
             var cart = new Cart()
             {
@@ -43,7 +43,7 @@ namespace CartDataAccessLayer.CartRepository
             return await _context.carts.FirstOrDefaultAsync(m=>m.Id==id);
         }
 
-        public async void RemoveCartAsync(Guid id)
+        public async Task RemoveCartAsync(Guid id)
         {
             var cartToRemove = _context.carts.FirstOrDefault(c => c.Id == id);
             if (cartToRemove != null)

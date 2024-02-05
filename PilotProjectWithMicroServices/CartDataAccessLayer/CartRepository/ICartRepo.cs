@@ -14,8 +14,8 @@ namespace CartDataAccessLayer.CartRepository
         
         Task<Cart> GetCartAsync(Guid id);
       
-        void CreateCartAsync(PostCart postCart);
+        Task CreateCartAsync(PostCart postCart);
 
-        void RemoveCartAsync(Guid id);
+        Task RemoveCartAsync(Guid id); //remember to return asyn Task otherwise DBcontext will get disposed
     }
 }

@@ -13,9 +13,9 @@ namespace CustomerDataLayer.CustomerRepository
         Task<IEnumerable<ReqResCustomer>> GetAllReqResCustomerAsync();
         Task<ReqResCustomer> GetReqResCustomerAsync(Guid id);
         Task<InternalCustomer> GetInternalCustomerAsync(Guid id);
-        void UpdateCustomerAsync(InternalCustomer customer);
-        void DeleteCustomerAsync(Guid id);   
-        void CreateCustomerAsync(InternalCustomer customer);
+        Task UpdateCustomerAsync(InternalCustomer customer);
+        Task DeleteCustomerAsync(Guid id);   
+        Task CreateCustomerAsync(InternalCustomer customer);
         bool InternalCustomerExistsAsync(Guid id);
     }
 }
