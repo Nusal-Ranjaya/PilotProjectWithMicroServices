@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kya7QDZ2fTXqhUCt3gl+eGP513/cttblRxe113514JiR1a7bj5L8ZKd4IhjtgJBR9j1oCI8RoSzWxoYCLfWkEg==",
+  "dgSpecHash": "ZW1Ip/3G0G5RyCIxJQfqhXL0iB+/04lea95zpOpSn3dtPBbeufNLmGmsa7lp415GzWALBXayDwP1667lxlpg1Q==",
   "success": true,
   "projectFilePath": "D:\\DotNet\\PilotProjectWithMicroServices\\PilotProjectWithMicroServices\\APIGateway\\APIGateway.csproj",
   "expectedPackageFiles": [

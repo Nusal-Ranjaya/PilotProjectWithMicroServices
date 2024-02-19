@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CartBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f583499ac754182622bb210b5173c6b7b7d25bb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6382c20ec6e31c56a3ffecaa867036b90a0430c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CartBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CartBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

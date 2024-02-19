@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{D2C4001F-6CE9-46BC-BE48-3C1C38DBD494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{D2C4001F-6CE9-46BC-BE48-3C1C38DBD494}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerMicroServices", "CustomerMicroServices", "{38606A2E-E239-4B71-A298-CF5EEAAF84FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CartMicroServices", "CartMicroServices", "{AC4FC689-5B1C-4EE5-B5E9-9C4641F9CCCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerDataLayer", "DataLayer\CustomerDataLayer.csproj", "{911AA044-9AF4-4182-95CC-4941DC58FB2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerDataLayer", "DataLayer\CustomerDataLayer.csproj", "{911AA044-9AF4-4182-95CC-4941DC58FB2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerBusinessLogicLayer", "BusinessLogicLayer\CustomerBusinessLogicLayer.csproj", "{66A70E63-46EA-4BFD-9271-AA3EA6CA6412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerBusinessLogicLayer", "BusinessLogicLayer\CustomerBusinessLogicLayer.csproj", "{66A70E63-46EA-4BFD-9271-AA3EA6CA6412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerAPIEndPoint", "CustomerAPIEndPoint\CustomerAPIEndPoint.csproj", "{45269BD4-D1FD-4996-96FE-860A7984F238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerAPIEndPoint", "CustomerAPIEndPoint\CustomerAPIEndPoint.csproj", "{45269BD4-D1FD-4996-96FE-860A7984F238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartDataAccessLayer", "CartDataAccessLayer\CartDataAccessLayer.csproj", "{DEA92E4B-A246-476A-9318-4A53591E744D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartDataAccessLayer", "CartDataAccessLayer\CartDataAccessLayer.csproj", "{DEA92E4B-A246-476A-9318-4A53591E744D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartBusinessLogicLayer", "CartBusinessLogicLayer\CartBusinessLogicLayer.csproj", "{7CFD78AA-E2BA-40C7-94C2-17FB2CBDD8A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartBusinessLogicLayer", "CartBusinessLogicLayer\CartBusinessLogicLayer.csproj", "{7CFD78AA-E2BA-40C7-94C2-17FB2CBDD8A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartAPIEndPoint", "CartAPIEndPoint\CartAPIEndPoint.csproj", "{714D5CA0-22EA-48D8-AFB2-0BBD31681391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartAPIEndPoint", "CartAPIEndPoint\CartAPIEndPoint.csproj", "{714D5CA0-22EA-48D8-AFB2-0BBD31681391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
